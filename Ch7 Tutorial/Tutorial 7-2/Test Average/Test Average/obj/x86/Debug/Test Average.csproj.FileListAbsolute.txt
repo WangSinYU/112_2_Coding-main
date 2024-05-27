@@ -39,3 +39,13 @@ C:\Users\m306\112_2_Coding\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\o
 C:\Users\m306\112_2_Coding\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.CoreCompileInputs.cache
 C:\Users\m306\112_2_Coding\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.exe
 C:\Users\m306\112_2_Coding\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.pdb
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\bin\Debug\Test Average.exe.config
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\bin\Debug\Test Average.exe
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\bin\Debug\Test Average.pdb
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.AssemblyReference.cache
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test_Average.Form1.resources
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test_Average.Properties.Resources.resources
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.GenerateResource.cache
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.CoreCompileInputs.cache
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.exe
+C:\Users\m306\112_2_Coding-main\Ch7 Tutorial\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.pdb

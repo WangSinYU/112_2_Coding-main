@@ -39,6 +39,10 @@
             this.getScoresButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.openFile = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.medianScoreLabel = new System.Windows.Forms.Label();
+            this.sortedScoreListBox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // averageScoreDescriptionLabel
@@ -76,9 +80,9 @@
             this.testScoresListBox.FormattingEnabled = true;
             this.testScoresListBox.ItemHeight = 18;
             this.testScoresListBox.Location = new System.Drawing.Point(18, 40);
-            this.testScoresListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testScoresListBox.Margin = new System.Windows.Forms.Padding(4);
             this.testScoresListBox.Name = "testScoresListBox";
-            this.testScoresListBox.Size = new System.Drawing.Size(178, 130);
+            this.testScoresListBox.Size = new System.Drawing.Size(164, 238);
             this.testScoresListBox.TabIndex = 6;
             // 
             // testScoresDescriptionLabel
@@ -123,8 +127,8 @@
             // 
             // getScoresButton
             // 
-            this.getScoresButton.Location = new System.Drawing.Point(135, 206);
-            this.getScoresButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.getScoresButton.Location = new System.Drawing.Point(121, 324);
+            this.getScoresButton.Margin = new System.Windows.Forms.Padding(4);
             this.getScoresButton.Name = "getScoresButton";
             this.getScoresButton.Size = new System.Drawing.Size(112, 32);
             this.getScoresButton.TabIndex = 13;
@@ -134,8 +138,8 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(256, 206);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitButton.Location = new System.Drawing.Point(279, 324);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(112, 32);
             this.exitButton.TabIndex = 14;
@@ -147,11 +151,55 @@
             // 
             this.openFile.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(204, 200);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 18);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Mediian Score";
+            // 
+            // medianScoreLabel
+            // 
+            this.medianScoreLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.medianScoreLabel.Location = new System.Drawing.Point(327, 194);
+            this.medianScoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.medianScoreLabel.Name = "medianScoreLabel";
+            this.medianScoreLabel.Size = new System.Drawing.Size(149, 31);
+            this.medianScoreLabel.TabIndex = 16;
+            this.medianScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // sortedScoreListBox
+            // 
+            this.sortedScoreListBox.FormattingEnabled = true;
+            this.sortedScoreListBox.ItemHeight = 18;
+            this.sortedScoreListBox.Location = new System.Drawing.Point(531, 40);
+            this.sortedScoreListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sortedScoreListBox.Name = "sortedScoreListBox";
+            this.sortedScoreListBox.Size = new System.Drawing.Size(164, 238);
+            this.sortedScoreListBox.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(528, 18);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 18);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Sorted  Scores";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 259);
+            this.ClientSize = new System.Drawing.Size(766, 586);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sortedScoreListBox);
+            this.Controls.Add(this.medianScoreLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.getScoresButton);
             this.Controls.Add(this.averageScoreLabel);
@@ -162,7 +210,7 @@
             this.Controls.Add(this.highScoreDescriptionLabel);
             this.Controls.Add(this.testScoresListBox);
             this.Controls.Add(this.testScoresDescriptionLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Test Average";
             this.ResumeLayout(false);
@@ -183,6 +231,10 @@
         private System.Windows.Forms.Button getScoresButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.OpenFileDialog openFile;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label medianScoreLabel;
+        private System.Windows.Forms.ListBox sortedScoreListBox;
+        private System.Windows.Forms.Label label2;
     }
 }
 

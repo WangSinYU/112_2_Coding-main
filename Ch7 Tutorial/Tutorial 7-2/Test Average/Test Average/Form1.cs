@@ -13,7 +13,7 @@ namespace Test_Average
 {
     public partial class Form1 : Form
     {
-        private const int SIZE = 5;
+        private const int SIZE = 40;
         public Form1()
         {
             InitializeComponent();
@@ -25,13 +25,15 @@ namespace Test_Average
             int highestScore = 0;
             int lowestScore = 0;
             double average = 0.0;
+            double median = 0.0;
             GetScoresFromFile(scores); //讀取檔案內容到陣列中
 
-           // for (int i = 0; i < scores.Length; i++)
-           // {
-           //     testScoresListBox.Items.Add(scores[i]);
-           //}
-           foreach(int value in scores)
+   
+            // for (int i = 0; i < scores.Length; i++)
+            // {
+            //     testScoresListBox.Items.Add(scores[i]);
+            //}
+            foreach (int value in scores)
             {
                 testScoresListBox.Items.Add(value);
             }
@@ -43,6 +45,19 @@ namespace Test_Average
 
             average = Average(scores);
             averageScoreLabel.Text = average.ToString();
+
+            median = Median(scores);
+            medianScoreLabel.Text = median.ToString();
+
+        }
+
+        private double Median(int[] scores)
+        {
+            Array.Sort(scores);
+            for (int i = 0; i < scores.Length; i++)
+                sortedScoreListBox.Items.Add("[" + i + "] :" + scores[i]);
+            return scores[scores.Length / 2];
+           
         }
 
         private double Average (int[] scores)
@@ -52,6 +67,7 @@ namespace Test_Average
             {
                 sum +=scores[i]; //sum = sum + score[i]
             }
+            MessageBox.Show("SUM =" + sum);
             return sum / scores.Length;
         }
 
