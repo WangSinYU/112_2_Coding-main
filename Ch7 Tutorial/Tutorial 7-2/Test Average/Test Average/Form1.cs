@@ -24,7 +24,8 @@ namespace Test_Average
             int[] scores = new int[SIZE];
             int highestScore = 0;
             int lowestScore = 0;
-            GetScoresFromFile(scores);
+            double average = 0.0;
+            GetScoresFromFile(scores); //讀取檔案內容到陣列中
 
            // for (int i = 0; i < scores.Length; i++)
            // {
@@ -39,6 +40,19 @@ namespace Test_Average
 
             lowestScore = Lowest(scores);
             lowScoreLabel.Text = lowestScore.ToString();
+
+            average = Average(scores);
+            averageScoreLabel.Text = average.ToString();
+        }
+
+        private double Average (int[] scores)
+        {
+            int sum = 0;
+            for (int i= 0; i < scores.Length; i++)
+            {
+                sum +=scores[i]; //sum = sum + score[i]
+            }
+            return sum / scores.Length;
         }
 
         private int Lowest (int[]scores)
